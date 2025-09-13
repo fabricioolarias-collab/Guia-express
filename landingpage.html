@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Guía Express: Pierde Barriga en 14 Días</title>
+  <meta name="description" content="Pierde barriga en 14 días con esta guía rápida y recibe un ebook con 20 recetas rápidas y saludables. Resultados visibles en solo 2 semanas. ¡Descárgala ahora!">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url("fundo.jpg") center center / cover fixed no-repeat;
+      line-height: 1.6;
+    }
+    .overlay, .top-fade {
+      position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    }
+    .overlay { background: rgba(0,0,0,0.45); }
+    .top-fade {
+      height: 42vh;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.15) 75%, rgba(0,0,0,0) 100%);
+    }
+    .container {
+      position: relative; z-index: 1;
+      max-width: 960px; margin: 0 auto; padding: 0 20px;
+      text-align: center;
+    }
+    header { padding: 48px 0 10px; }
+    header h1 {
+      margin: 0 0 10px; font-size: 2rem; font-weight: 700;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+    header p {
+      margin: 0; font-size: 1.1rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+    .bonus {
+      margin-top: 12px;
+      font-size: 1rem;
+      color: #00c896;
+      font-weight: 600;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+    .mockup { margin: 24px auto 10px; }
+    .mockup img {
+      display: block; margin: 0 auto;
+      width: 100%; max-width: 300px; height: auto;
+      background: transparent !important; border: 0; border-radius: 0; box-shadow: none;
+    }
+    .btn {
+      display: inline-block; border: 0; cursor: pointer;
+      padding: 15px 34px; border-radius: 999px; font-weight: 700; font-size: 1.05rem;
+      color: #fff; text-decoration: none; letter-spacing: 0.2px;
+      background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+      transition: transform .2s, box-shadow .2s, filter .2s;
+      margin-top: 15px;
+    }
+    .btn:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 14px 28px rgba(0,0,0,0.5); filter: brightness(1.05); }
+    .info {
+      margin: 18px auto 0; padding: 24px;
+      max-width: 760px; text-align: left;
+      background: rgba(0,0,0,0.45);
+      border-radius: 14px;
+    }
+    .info h2 {
+      margin: 0 0 16px; text-align: center; color: #00c896; font-weight: 700;
+    }
+    .info ul { margin: 0; padding: 0; list-style: none; }
+    .info li {
+      position: relative; margin: 10px 0; padding-left: 26px; font-size: 1rem;
+    }
+    .info li::before {
+      content: "✔"; position: absolute; left: 0; top: 0; color: #00c896; font-weight: 700;
+    }
+    .testimonial {
+      margin-top: 16px; padding: 14px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px; font-style: italic; font-size: 0.95rem;
+    }
+    .actions { margin: 26px 0 8px; }
+    .price-line { margin-top: 8px; font-weight: 600; opacity: 0.95; }
+    .price-line del { opacity: 0.6; margin-right: 6px; }
+    .contador {
+      display: inline-block; margin-top: 14px; padding: 10px 16px; border-radius: 10px;
+      background: rgba(255,0,0,0.22); font-weight: 700; font-size: 0.98rem;
+    }
+    .garantia {
+      margin-top: 12px; color: #00ffb3; font-weight: 700; font-size: 0.92rem;
+    }
+    footer {
+      margin: 46px auto 18px; padding: 10px 0; font-size: 0.9rem; opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="top-fade"></div>
+
+  <div class="container">
+    <header>
+      <h1>Guía Express: Pierde Barriga en 14 Días</h1>
+      <p>Transforma tu cuerpo en solo 2 semanas sin dietas extremas 🚀</p>
+      <p class="bonus">Incluye ebook gratuito con 20 recetas rápidas y saludables para acelerar tus resultados</p>
+    </header>
+
+    <div class="mockup">
+      <img src="att.jpg" alt="Mockup Guía Express" />
+      <a class="btn" href="#comprar">💥 ¡Comprar ahora!</a>
+    </div>
+
+    <section class="info">
+      <h2>Lo que encontrarás en la guía</h2>
+      <ul>
+        <li>Plan diario de 14 días fácil de seguir</li>
+        <li>Ejercicios rápidos que puedes hacer en casa</li>
+        <li>Consejos para mejorar tu metabolismo</li>
+        <li>Estrategias simples para perder barriga sin sufrir</li>
+        <li>Acceso inmediato en formato PDF (20 páginas)</li>
+        <li>Bonus: Ebook con 20 recetas rápidas y saludables</li>
+      </ul>
+      <div class="testimonial">
+        “En solo 10 días ya noté mi ropa más suelta. ¡Nunca pensé que sería tan fácil!” — Laura M., México
+      </div>
+      <div class="testimonial">
+        “Me encantó que no necesitara equipo, todo lo hice en mi sala.” — Carlos R., Chile
+      </div>
+    </section>
+
+    <div class="actions">
+      <a class="btn" href="#comprar">¡Quiero mi guía ahora!</a>
+      <div class="price-line"><del>$29</del> <strong>$9 USD</strong> — Oferta limitada</div>
+    </div>
+
+    <div class="contador" id="contador">⏳ Cargando oferta…</div>
+    <div class="garantia">✅ Garantía de devolución de 7 días</div>
+
+    <footer>© 2025 Guía Express — Todos los derechos reservados</footer>
+
+    <div id="comprar" style="margin-top: 60px;">
+      <!-- Aqui você coloca seu checkout ou link de pagamento -->
+    </div>
+  </div>
+
+  <script>
+(function iniciarContador() {
+  const el = document.getElementById('contador');
+  const KEY = 'fimOferta';
+  let fim = localStorage.getItem(KEY);
+
+  if (!fim) {
+    fim = Date.now() + 24 * 60 * 60 * 1000; // 24h
+    localStorage.setItem(KEY, String(fim));
+  } else {
+    fim = parseInt(fim, 10);
+    if (Number.isNaN(fim) || fim <= Date.now()) {
+      fim = Date.now() + 24 * 60 * 60 * 1000;
+      localStorage.setItem(KEY, String(fim));
+    }
+  }
+
+  const pad = n => String(n).padStart(2, '0');
+
+  const tick = () => {
+    const dist = fim - Date.now();
+    if (dist <= 0) {
+      el.textContent = '¡La oferta ha expirado!';
+      clearInterval(timer);
+      return;
+    }
+    const h = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((dist % (1000 * 60)) / 1000);
+    el.textContent = `⏳ Oferta termina en: ${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+  };
+
+  tick();
+  const timer = setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
